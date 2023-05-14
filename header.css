@@ -1,0 +1,459 @@
+header {
+    background-color: var(--clr-purple);
+}
+
+header.applied {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    background-color: transparent;
+}
+
+.header.conteiner {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-purple);
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header.conteiner.fixed {
+    position: relative;
+    background-color: var(--clr-white);
+    box-shadow: 0px 10px 30px rgb(0, 0, 0, 0.07);
+    animation: appear 0.5s;
+}
+
+.header.conteiner.unfixed {
+    position: relative;
+    background-color: var(--clr-white);
+    box-shadow: 0px 10px 30px rgb(0, 0, 0, 0.07);
+    animation: disappear 0.5s;
+}
+
+@keyframes appear {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes disappear {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -100px;
+    }
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.header__left__menu {
+    display: none;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+}
+
+.header__right__menu {
+    display: none;
+}
+
+.header__logo {
+    display: flex;
+    cursor: pointer;
+}
+
+.logo {
+    height: 25px;
+}
+
+.header__search {
+    display: block;
+    color: var(--clr-white);
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+#anchor6v2 {
+    display: none;
+    margin-left: 0;
+}
+
+.header__bars {
+    display: block;
+    color: var(--clr-white);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    margin-left: var(--size-3xl);
+}
+
+.header__search__bar__wrapper {
+    flex: 1;
+    height: 52px;
+    position: relative;
+    border-radius: 6px;
+    margin-left: var(--size-base);
+    margin-right: var(--size-base);
+}
+
+.header__search__bar__conteiner {
+    height: auto;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: var(--clr-white);
+    z-index: 101;
+}
+
+.header__search__bar__conteiner:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+}
+
+.header__search__bar__conteiner:hover .header__search__bar__anchor__conteiner {
+    display: flex;
+}
+
+.header__search__bar {
+    width: auto;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 1px solid rgb(94, 94, 94);
+    background-color: var(--clr-white);
+    padding-top: var(--size-xxs);
+    margin-left: 0.85rem;
+    margin-right: var(--size-xs);
+}
+
+.header__search__bar__input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: var(--size-sm);
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding-top: var(--size-xxs);
+    padding-bottom: var(--size-xxs);
+}
+
+.x-mark__search {
+    height: 30px;
+    cursor: pointer;
+}
+
+.header__search__bar__anchor__conteiner {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: var(--size-xxs);
+    margin-bottom: var(--size-xxs);
+}
+
+.header__search__bar__anchor {
+    font-weight: 400;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding-top: var(--size-xxxs);
+    padding-bottom: var(--size-xxxs);
+    padding-left: 0.85rem;
+    padding-right: var(--size-xs);
+}
+
+.header__search__bar__anchor:hover {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+}
+
+.header__right__menu__btn__third__conteiner.btn_conteiner {
+    display: none;
+}
+
+/*
+<p class="header__search__bar__anchor">What is Slack Connect?</p>
+<p class="header__search__bar__anchor">Slack Digital HQ</p>
+<p class="header__search__bar__anchor">Working with external organizations in Slack</p>
+<p class="header__search__bar__anchor">How much does Slack cost?</p>
+<p class="header__search__bar__anchor">Using Slack for remote work</p>
+<p class="header__search__bar__anchor">Webinars: Learn Slack basics and more</p>
+<p class="header__search__bar__anchor">What are Slack's security features?</p>
+<p class="header__search__bar__anchor">Learn about Enterprise Grid</p>
+<p class="header__search__bar__anchor">Get Slack certified</p>
+*/
+
+/*  lg  */
+@media (min-width: 1024px) {
+
+    header.applied {
+        padding-top: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header.conteiner.fixed {
+        border-radius: 50px;
+    }
+
+    .header.conteiner.unfixed {
+        border-radius: 50px;
+    }
+
+    .header__left__menu {
+        display: flex;
+        align-items: center;
+        margin-left: var(--size-4xl);
+        list-style: none;
+        padding: 0;
+        gap: 2em;
+    }
+
+    .header__right__menu {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        list-style: none;
+        padding: 0;
+    }
+
+    .header__anchor {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        color: var(--clr-white);
+        font-size: var(--size-sm);
+        font-weight: 600;
+    }
+
+    .header__anchor::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        bottom: 0.6rem;
+        left: 0;
+        height: 0.1rem;
+        background-color: var(--clr-white);
+        transition: all 0.3s;
+    }
+
+    .header__anchor:hover::after {
+        width: 100%;
+    }
+
+    .header__anchor.fixed {
+        color: black;
+    }
+
+    .header__anchor.fixed::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        bottom: 0.6rem;
+        left: 0;
+        height: 0.1rem;
+        background-color: black;
+        transition: all 0.3s;
+    }
+
+    .header__anchor.fixed:hover::after {
+        width: 100%;
+    }
+
+
+
+
+    .header__anchor__product__main__conteiner {
+        position: relative;
+    }
+
+    .header__anchor__product__conteiner {
+        display: flex;
+        align-items: center;
+        height: 44px;
+    }
+
+    .header__anchor__product {
+        display: flex;
+        align-items: center;
+        color: var(--clr-white);
+        font-size: var(--size-sm);
+        font-weight: 600;
+        padding-right: 0.25rem;
+    }
+
+    .arrow__sign__product {
+        color: var(--clr-white);
+        width: 14px;
+        transition: transform 0.3s;
+    }
+
+    .header__anchor__product__main__conteiner:hover .arrow__sign__product {
+        transform: rotate(180deg);
+    }
+
+    .header__anchor__product__dropdown {
+        left: -10px;
+        top: 38px;
+        display: none;
+        padding-top: 8px;
+        border-radius: 7px;
+        position: absolute;
+        white-space: nowrap;
+        gap: 0.35rem;
+        padding-right: 220px;
+        padding-bottom: 8px;
+        flex-direction: column;
+        background: var(--clr-white);
+        border: 1px solid rgb(219, 219, 219);
+        z-index: 101;
+    }
+
+    .header__anchor__product__main__conteiner:hover .header__anchor__product__dropdown {
+        display: flex;
+    }
+
+    .dropdown-txt {
+        color: var(--clr-black);
+        font-size: 0.825rem;
+        width: 220px;
+        padding-top: 3.5px;
+        padding-left: 17px;
+        padding-bottom: 3.5px;
+    }
+
+    .dropdown-txt:hover {
+        background-color: var(--clr-blue);
+        color: var(--clr-white);
+    }
+
+    .dropdown-txt.download:hover .cloud__sign.dropdown {
+        color: var(--clr-white);
+    }
+
+    .dropdown-txt.download {
+        display: flex;
+        align-items: center;
+    }
+
+    .cloud__sign.dropdown {
+        color: var(--clr-black);
+    }
+
+    .dropdown__line {
+        width: 220px;
+        height: 1px;
+        background-color: rgb(235, 234, 235);
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+
+
+    .header__right__menu__btn__first__conteiner.btn_conteiner {
+        display: none;
+    }
+
+
+    .header__right__menu__btn__second__conteiner.btn_conteiner {
+        height: 44px;
+        width: 136px;
+        padding: 0;
+        flex-direction: column;
+        background-color: var(--clr-purple);
+    }
+
+    .header__right__menu__btn__second__conteiner.btn_conteiner:hover {
+        padding: 1px;
+    }
+
+    .header__right__menu__btn__third__conteiner.btn_conteiner {
+        display: none;
+        height: 44px;
+        width: 94px;
+        flex-direction: column;
+    }
+
+    .header__right__menu__btn__second.btn {
+        background-color: var(--clr-white);
+        color: var(--clr-purple);
+    }
+
+    .header__right__menu__btn__second__conteiner.btn_conteiner.fixed {
+        background-color: var(--clr-purple_btn);
+    }
+
+    .header__right__menu__btn__second.btn.fixed {
+        background-color: var(--clr-purple_btn);
+        color: var(--clr-white);
+    }
+
+    .header__right__menu__btn__second__conteiner.btn_conteiner.fixed:hover .header__right__menu__btn__second.btn {
+        background-color: var(--clr-purple_btn_hover);
+    }
+
+    .header__anchor.sign-in {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .header__bars {
+        display: none;
+    }
+
+    .header__search__bar__wrapper {
+        margin-left: var(--size-2xl);
+    }
+
+    #anchor6v2 {
+        margin-left: var(--size-2xl);
+    }
+}
+
+/*  xl  */
+@media (min-width: 1280px) {
+
+    .header__right__menu__btn__first__conteiner.btn_conteiner {
+        height: 44px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--clr-white);
+        margin-right: var(--size-xl);
+    }
+
+    .header__right__menu__btn__first.btn {
+        background-color: var(--clr-purple);
+        color: var(--clr-white);
+    }
+
+    .header__right__menu__btn__first__conteiner.btn_conteiner.fixed {
+        background-color: var(--clr-purple_btn);
+    }
+
+    .header__right__menu__btn__first.btn.fixed {
+        background-color: var(--clr-white);
+        color: var(--clr-purple_btn);
+    }
+}

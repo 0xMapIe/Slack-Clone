@@ -1,0 +1,142 @@
+.btn_conteiner {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-purple_btn);
+    border-radius: 3px;
+    padding: 1px;
+    transition: padding 0.3s;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: var(--size-sm);
+    color: var(--clr-purple_btn);
+    border-radius: 3px;
+    background-color: var(--clr-white);
+    transition: all 0.3s;
+}
+
+.btn_conteiner:hover {
+    padding: 2px;
+}
+
+.conteiner {
+    width: 100%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+}
+
+.section {
+    padding-top: var(--size-5xl);
+    padding-bottom: var(--size-5xl);
+}
+
+.padding {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+/*  xs */
+@media (min-width: 475px) {
+    /*.conteiner {
+        max-width: 475px;
+    }*/
+}
+
+/*  sm  */
+@media (min-width: 640px) {
+    /*.conteiner {
+        max-width: 640px;
+    }*/
+
+    .padding {
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+
+    .header.conteiner {
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+        padding-top: var(--size-lg);
+        padding-bottom: var(--size-lg);
+    }
+}
+
+/*  md  */
+@media (min-width: 768px) {
+    /*.conteiner {
+        max-width: 768px;
+    }*/
+
+    .padding {
+        padding-left: var(--size-3xl);
+        padding-right: var(--size-3xl);
+    }
+
+    .header.conteiner {
+        padding-left: var(--size-3xl);
+        padding-right: var(--size-3xl);
+    }
+}
+
+/*  lg  */
+@media (min-width: 1024px) {
+    /*.conteiner {
+        max-width: 1024px;
+    }*/
+
+    .padding {
+        padding-left: 2.7rem;
+        padding-right: 2.7rem;
+    }
+
+    .header.conteiner {
+        padding-left: 2.7rem;
+        padding-right: 2.7rem;
+    }
+}
+
+/*  xl  */
+@media (min-width: 1280px) {
+    /*.conteiner {
+        max-width: 1280px;
+    }*/
+
+    .padding {
+        padding-left: var(--size-5xl);
+        padding-right: var(--size-5xl);
+    }
+
+    .header.conteiner {
+        padding-left: var(--size-5xl);
+        padding-right: var(--size-5xl);
+    }
+
+    .header.conteiner.fixed {
+        padding-left: var(--size-4xl);
+        padding-right: var(--size-4xl);
+    }
+
+    .header.conteiner.unfixed {
+        padding-left: var(--size-4xl);
+        padding-right: var(--size-4xl);
+    }
+}
+
+@media (min-width: 1440px) {
+    .conteiner {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

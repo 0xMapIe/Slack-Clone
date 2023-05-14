@@ -1,0 +1,103 @@
+:root {
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: rgb(0, 0, 0);
+    --clr-gold: rgb(233, 175, 47);
+    --clr-purple: rgb(84, 21, 84);
+    --clr-purple_btn: rgb(97, 31, 105);
+    --clr-purple_btn_hover: rgb(74, 21, 75);
+    --clr-bg: rgb(244, 237, 228);
+    --clr-blue: rgb(18, 100, 163);
+
+
+    --size-xxxs: 0.25rem;
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+
+* {
+    margin: 0;
+    line-height: calc(1em + var(--size-xxs));
+}
+
+strong {
+    color: var(--clr-gold);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--size-3xl);
+    font-weight: 600;
+    letter-spacing: -1.5px;
+}
+
+h3 {
+    font-size: var(--size-base);
+    font-weight: 600;
+    text-align: center;
+    line-height: var(--size-base);
+}
+
+p {
+    font-size: var(--size-base);
+    font-weight: 500;
+    padding: 0 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-bg);
+    overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+a {
+    color: var(--clr-blue);
+    text-decoration: none;
+    white-space: nowrap;
+}

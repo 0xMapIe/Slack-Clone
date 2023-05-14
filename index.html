@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slack clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern-normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="numbers.css">
+    <link rel="stylesheet" href="slider__section.css">
+    <link rel="stylesheet" href="eighth__section.css">
+    <link rel="stylesheet" href="ninth__section.css">
+    <link rel="stylesheet" href="tenth__section.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="utils.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav__conteiner conteiner">
+        <div class="nav__main">
+          <div class="nav__upper__part">
+            <div class="nav__header__logo">
+              <img
+                class="logo nav"
+                src="assets/images/slack_logo_picture.png"
+                alt="logo"
+              />
+              <img
+                class="logo nav__text"
+                src="assets/images/slack_logo_txt.png"
+                alt="logo"
+              />
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="x-mark">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>          
+          </div>
+          <ul class="nav__middle__part">
+            <li class="nav__anchor__product__conteiner">
+              <a class="nav__anchor product">Product</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="arrow__sign__product__v2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>   
+            </li>
+            <li class="nav__anchor__product__dropdown">
+              <a href="https://slack.com/features" class="nav__anchor__product first">Features</a>
+              <a href="https://slack.com/features/channels" class="nav__anchor__product">Channels</a>
+              <a href="https://slack.com/integrations" class="nav__anchor__product">Integrations</a>
+              <a href="https://slack.com/trust/security" class="nav__anchor__product">Security</a>
+              <a href="https://slack.com/connect" class="nav__anchor__product">Slack Connect</a>
+              <a href="https://slack.com/customer-stories" class="nav__anchor__product last">Customers</a>
+            </li>
+            <li>
+              <a class="nav__anchor" href="https://slack.com/solutions">Solutions</a>
+            </li>
+            <li>
+              <a class="nav__anchor" href="https://slack.com/enterprise">Enterprise</a>
+            </li>
+            <li>
+              <a class="nav__anchor" href="https://slack.com/resources">Resources</a>
+            </li>
+            <li>
+              <a class="nav__anchor" href="https://slack.com/pricing">Pricing</a>
+            </li>
+            <li>
+              <a class="nav__anchor" href="https://slack.com/pricing">Sign In</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__lower__part">
+          <button class="nav__lower__part__btn__first__conteiner btn_conteiner">
+            <div class="nav__lower__part__btn__first btn">Sign In</div>
+          </button>
+          <button class="nav__lower__part__btn__second__conteiner btn_conteiner">
+            <div class="nav__lower__part__btn__second btn">Download Slack</div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header id="header">
+      <div class="header conteiner">
+        <div class="header__left">
+          <div class="header__logo">
+            <img
+              class="logo"
+              src="assets/images/slack_logo_picture.png"
+              alt="logo"
+            />
+            <img
+              class="logo text"
+              src="assets/images/slack_logo_txt.png"
+              alt="logo"
+            />
+          </div>
+          <button id="anchor6v2" class="header__search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+          <ul class="header__left__menu">
+            <li class="header__anchor__product__main__conteiner">
+              <div onclick="showmore()" class="header__anchor__product__conteiner" style="cursor:pointer;">
+                <a  id="anchor1" class="header__anchor__product" href="#Product">Product</a>
+                <svg id="anchor8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="arrow__sign__product">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>   
+              </div>
+              <div class="header__anchor__product__dropdown" style="width: 100px">
+                <a href="https://slack.com/features" target="_blank" class="dropdown-txt">Features</a>
+                <a href="https://slack.com/features/channels" target="_blank" class="dropdown-txt">Channels</a>
+                <a href="https://slack.com/integrations" target="_blank" class="dropdown-txt">Integrations</a>
+                <a href="https://slack.com/trust/security" target="_blank" class="dropdown-txt">Security</a>
+                <a href="https://slack.com/connect" target="_blank" class="dropdown-txt">Slack Connect</a>
+                <a href="https://slack.com/customer-stories" target="_blank" class="dropdown-txt">Customers</a>
+                <div class="dropdown__line"></div>
+                <a href="https://slack.com/downloads/windows" target="_blank" class="dropdown-txt download">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud__sign dropdown">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75v6.75m0 0l-3-3m3 3l3-3m-8.25 6a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg> 
+                  Download Slack</a>
+              </div>
+            </li>
+            <li>
+              <a id="anchor2" class="header__anchor" href="https://slack.com/solutions">Solutions</a>
+            </li>
+            <li>
+              <a id="anchor3" class="header__anchor" href="https://slack.com/enterprise">Enterprise</a>
+            </li>
+            <li>
+              <a id="anchor4" class="header__anchor" href="https://slack.com/resources">Resources</a>
+            </li>
+            <li>
+              <a id="anchor5" class="header__anchor" href="https://slack.com/pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__search__bar__wrapper">
+          <div class="header__search__bar__conteiner">
+            <div class="header__search__bar">
+              <input class="header__search__bar__input" type="text" placeholder="Find anything (ie. channels, emoji, or reset password)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="x-mark__search">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div class="header__search__bar__anchor__conteiner">
+              <p class="header__search__bar__anchor">What is Slack Connect?</p>
+              <p class="header__search__bar__anchor">Slack Digital HQ</p>
+              <p class="header__search__bar__anchor">Working with external organizations in Slack</p>
+              <p class="header__search__bar__anchor">How much does Slack cost?</p>
+              <p class="header__search__bar__anchor">Using Slack for remote work</p>
+              <p class="header__search__bar__anchor">Webinars: Learn Slack basics and more</p>
+              <p class="header__search__bar__anchor">What are Slack's security features?</p>
+              <p class="header__search__bar__anchor">Learn about Enterprise Grid</p>
+              <p class="header__search__bar__anchor">Get Slack certified</p>
+            </div>
+          </div>
+        </div>
+        <div class="header__right">
+          <button id="anchor6" class="header__search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+          <a href="">
+            <button id="btn__conteiner__3" class="header__right__menu__btn__third__conteiner btn_conteiner">
+              <div id="btn__3" class="header__right__menu__btn__third btn">Search</div>
+            </button>
+          </a>
+          <ul class="header__right__menu">
+            <li>
+              <a id="anchor7" class="header__anchor sign-in" href="https://slack.com/signin">Sign In</a>
+            </li>
+            <li>
+              <a href="https://slack.com/contact-sales?id=windows">
+                <button id="btn__conteiner__1" class="header__right__menu__btn__first__conteiner btn_conteiner">
+                  <div id="btn__1" class="header__right__menu__btn__first btn">Talk to sales</div>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="https://slack.com/get-started#/createnew">
+                <button id="btn__conteiner__2" class="header__right__menu__btn__second__conteiner btn_conteiner">
+                  <div id="btn__2" class="header__right__menu__btn__second btn">Try for free</div>
+                </button>
+              </a>
+            </li>
+          </ul>
+          <button id="anchor9" class="header__bars">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section__conteiner hero__sec">
+        <div class="hero conteiner padding">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Unlock your <strong>productivity potential</strong>
+            </h1>
+            <p class="hero__paragraph">
+              Connect the right people, find anything you need and automate the
+              rest. That’s work in Slack, your productivity platform.
+            </p>
+            <div class="hero__section__btn__conteiner">
+              <a href="https://slack.com/get-started#/createnew" style="width: 100%;">
+                <button class="hero__section__btn__first__conteiner btn_conteiner">
+                  <div class="hero__section__btn__first btn">Sign up with email</div>
+                </button>
+              </a>
+              <a href="" style="width: 100%;">
+                <button class="hero__section__btn__second">
+                  <div class="icon-box">
+                    <img
+                      class="icon"
+                      src="assets/svgs/Google__G__Logo.svg.png"
+                      alt="img"
+                    />
+                  </div>
+                  Sign up with google
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="hero__video__conteiner">
+            <video class="hero__video" autoplay loop muted plays-inline>
+              <source src="assets/videos/hero-product-ui.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conteiner partners__sec">
+        <div class="partners conteiner padding">
+          <h3 class="partners__title">TRUSTED BY COMPANIES ALL OVER THE WORLD</h3>
+          <div class="partners__img__conteiner">
+            <img
+              class="partners__img"
+              src="assets/images/airbnb-logo@2x.png"
+              alt="img"
+              style="width: 115px"
+            />
+            <img
+              class="partners__img"
+              src="assets/images/logo-nasa@2x.png"
+              alt="img"
+              style="width: 65px"
+            />
+            <img class="partners__img" src="assets/images/uber@2x.png" alt="img" style="width: 70px"/>
+            <img
+              class="partners__img"
+              src="assets/images/target-logo@2x.png"
+              alt="img"
+              style="width: 50px"
+            />
+            <img class="partners__img" src="assets/images/logo-nyt.png" alt="img" style="width: 230px"/>
+            <img class="partners__img" src="assets/images/etsy@2x.png" alt="img" style="width: 75px"/>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conteiner about__sec">
+        <div class="about conteiner section">
+          <video class="about__video first" autoplay loop muted plays-inline>
+            <source src="assets/videos/firsts-video-mobile.mp4" />
+          </video>
+          <video class="about__video second" autoplay loop muted plays-inline>
+            <source src="assets/videos/firsts-video-desktop.mp4" />
+          </video>
+  
+          <div class="about__content padding">
+            <h2 class="about__title">Bring your team together</h2>
+            <p class="about__paragraph">
+              At the heart of Slack are channels: organized spaces for everyone
+              and everything you need for work. In channels, it’s easier to
+              connect across departments, offices, time zones and even other
+              companies.
+            </p>
+            <div class="about__link__conteiner">
+              <div class="about__link">
+                <a class="about__link__text" href="https://slack.com/features/channels">Learn more about channels</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="about__arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conteiner about__sec">
+        <div class="about__middle conteiner section">
+          <video class="about__video first" autoplay loop muted plays-inline>
+            <source
+              src="assets/videos/second-video-mobile.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <video class="about__video second middle" autoplay loop muted plays-inline>
+            <source
+              src="assets/videos/second-video-desktop.mp4"
+              type="video/mp4"
+            />
+          </video>
+  
+          <div class="about__content__middle padding">
+            <h2 class="about__title">Choose how you want to work</h2>
+            <p class="about__paragraph">
+              In Slack, you’ve got all the flexibility to work when, where and how
+              it’s best for you. You can easily chat, send audio and video clips,
+              or hop on a huddle to talk things out live.
+            </p>
+            <div class="about__link__conteiner">
+              <div class="about__link">
+                <a class="about__link__text" href="https://slack.com/engage-users"
+                  >Learn more about flexible communication</a
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="about__arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conteiner about__sec">
+        <div class="about conteiner section">
+          <video class="about__video first" autoplay loop muted plays-inline>
+            <source src="assets/videos/third-video-mobile.mp4" />
+          </video>
+          <video class="about__video second" autoplay loop muted plays-inline>
+            <source src="assets/videos/third-video-desktop.mp4" />
+          </video>
+
+          <div class="about__content padding">
+            <h2 class="about__title">Move faster with your tools in one place</h2>
+            <p class="about__paragraph">
+              With your other work apps connected to Slack, you can work faster by
+              switching tabs less. And with powerful tools like Workflow Builder,
+              you can automate away routine tasks.
+            </p>
+            <div class="about__link__conteiner">
+              <div class="about__link">
+                <a class="about__link__text" href="https://slack.com/integrations"
+                  >Learn more about the Slack platform</a
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="about__arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conteiner numbers__sec">
+        <div class="numbers conteiner">
+          <div class="numbers__content padding">
+            <h2 class="numbers__title">Teams large and small rely on Slack</h2>
+            <p class="numbers__description">
+              Slack security scales up to support collaboration at the world's biggest companies.
+            </p>
+            <div class="numbers__content__btn__conteiner">
+              <a href="https://slack.com/enterprise" class="numbers__content__btn__anchor first">
+                <button class="numbers__content__btn__first__conteiner btn_conteiner">
+                  <div class="numbers__content__btn__first btn">Meet slack for enterprise</div>
+                </button>
+              </a>
+              <a href="https://slack.com/contact-sales?from_home=1" class="numbers__content__btn__anchor second">
+                <button class="numbers__content__btn__second__conteiner btn_conteiner">
+                  <div class="numbers__content__btn__second btn">Talk to sales</div>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="numbers__percentages padding">
+            <div class="numbers__percentages__conteiner">
+              <h2 class="numbers__percentages__numbers">85%</h2>
+              <p class="numbers__percentages__description">
+                of users say Slack has improved communication*
+              </p>
+            </div>
+            <div class="numbers__percentages__conteiner">
+              <h2 class="numbers__percentages__numbers">86%</h2>
+              <p class="numbers__percentages__description">
+                feel their ability to work remotely has improved*
+              </p>
+            </div>
+            <div class="numbers__percentages__conteiner">
+              <h2 class="numbers__percentages__numbers">88%</h2>
+              <p class="numbers__percentages__description">
+                feel more connected to their teams*
+              </p>
+            </div>
+          </div>
+          <div class="numbers__story__conteiner">
+            <a class="numbers__story__video__conteiner" href="https://www.youtube.com/watch?v=IDrUzXubiiQ&t=13s" target="_blank">
+              <video class="numbers__story__video" autoplay loop muted plays-inline>
+                <source src="assets/videos/numbers_section_video.mp4" type="video/mp4">
+              </video>
+              <button class="play__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="triangle">
+                  <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                </svg>              
+              </button>
+            </a>
+            <div class="numbers__story__text__conteiner">
+              <p class="numbers__story__quote">
+                "We were able to create a large virtual network of employees that can communicate as though they are together. There was a lot of disruption in terms of where we worked, but in terms of how we worked—very little disruption."
+              </p>
+              <p class="numbers__story__name">Mark Smith</p>
+              <p class="numbers__story__description">Senior Technical Product Manager, T-Mobile</p>
+              <div class="numbers__story__link__conteiner">
+                <div class="numbers__story__link">
+                  <a href="https://slack.com/customer-stories">See more customer stories</a>
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="about__arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="numbers__story__addition">
+            * Weighted average. Based on 2,707 survey responses from weekly Slack users in the U.S., UK, Australia and Canada with a ± 2% margin of error at 95% CI (December 2021).
+          </p>
+        </div>
+      </section>
+
+      <section class="section__conteiner slider__sec">
+        <div class="slider__section conteiner">
+          <h2 class="slider__section__title">
+            Take a deeper dive into a new way to work
+          </h2>
+          <div class="slider__section__slider_wrapper">
+            <div class="slider">
+              <div id="slide-1" class="slider__section__slider first" onclick="location.href='https://slack.com/customer-stories/openai-connects-with-customers-and-expands-chatgpt-with-slack';">
+                <div class="slider__section__slider__text">
+                  <h3 class="slider__section__slider__subtitle">Collection</h3>
+                  <h2 class="slider__section__slider__title">Slack as your digital HQ</h2>
+                </div>
+                <img class="slider__section__slider__img" src="assets/images/slider_image_1.png" alt="img">
+                <div class="slider__section__slider__bottom">
+                  <a href="" class="slider__section__slider__link">See all</a>
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="slider__arrow"
+                  style="color: var(--clr-white);"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+                </div>
+              </div>
+              <div id="slide-2" class="slider__section__slider v2 second" onclick="location.href='https://www.salesforce.com/world-tour/nyc/home/?utm_source=slackhq&utm_medium=referral&utm_campaign=Slack-Frontiers&utm_term=logged-out-homepage-banner&utm_content=home-page-banner';">
+                <div class="slider__section__slider__top">
+                  <img class="slider__section__slider__img" src="assets/images/img-promo-02@2x.jpg" alt="img">
+                  <div class="slider__section__slider__text">
+                    <h3 class="slider__section__slider__subtitle" style="color: var(--clr-black);">Resource</h3>
+                    <h2 class="slider__section__slider__title" style="color: var(--clr-black);">See how others are building their digital HQ</h2>
+                  </div>
+                </div>
+                <div class="slider__section__slider__bottom">
+                  <a href="" class="slider__section__slider__link" style="color: var(--clr-blue);">Read more</a>
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="slider__arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+                </div>
+              </div>
+              <div id="slide-3" class="slider__section__slider v2 third" onclick="location.href='https://slack.com/events/tips-and-tricks-to-boost-productivity';">
+                <div class="slider__section__slider__top">
+                  <img class="slider__section__slider__img" src="assets/images/img-promo-03@2x.png" alt="img">
+                  <div class="slider__section__slider__text">
+                    <h3 class="slider__section__slider__subtitle" style="color: var(--clr-black);">Webinar</h3>
+                    <h2 class="slider__section__slider__title" style="color: var(--clr-black);">Win the battle for talent with a digital HQ</h2>
+                  </div>
+                </div>
+                <div class="slider__section__slider__bottom">
+                  <a href="" class="slider__section__slider__link" style="color: var(--clr-blue);">Watch now</a>
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="slider__arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+                </div>
+              </div>
+              <div id="slide-4" class="slider__section__slider v2 fourth" onclick="location.href='https://slack.com/why/slack-vs-email';">
+                <div class="slider__section__slider__top">
+                  <img class="slider__section__slider__img" src="assets/images/img-promo-04@2x.jpg" alt="img">
+                  <div class="slider__section__slider__text">
+                    <h3 class="slider__section__slider__subtitle" style="color: var(--clr-black);">E-book</h3>
+                    <h2 class="slider__section__slider__title" style="color: var(--clr-black);">Reinventing work: New imperatives for the future of working</h2>
+                  </div>
+                </div>
+                <div class="slider__section__slider__bottom">
+                  <a href="" class="slider__section__slider__link" style="color: var(--clr-blue);">Get e-book</a>
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="slider__arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__section__dots_conteiner">
+            <a class="slider__section__dot" href="#slide-1"></a>
+            <a class="slider__section__dot" href="#slide-2"></a>
+            <a class="slider__section__dot" href="#slide-3"></a>
+            <a class="slider__section__dot" href="#slide-4"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conteiner eighth__sec">
+        <div class="eighth__section conteiner">
+          <div class="eighth__section__conteiner conteiner padding">
+            <h2 class="eighth__section__title">
+              Welcome to your new digital HQ
+            </h2>
+            <div class="eighth__section__btn__conteiner">
+              <button class="eighth__section__btn__first__conteiner btn_conteiner" onclick="location.href='https://slack.com/get-started#/createnew';">
+                <div class="eighth__section__btn__first btn">Try for free</div>
+              </button>
+              <button class="eighth__section__btn__second__conteiner btn_conteiner" onclick="location.href='https://slack.com/contact-sales?from_home=1';">
+                <div class="eighth__section__btn__second btn">Talk to sales</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conteiner ninth__sec">
+        <div class="ninth__section conteiner padding">
+          <div class="ninth__section__first__conteiner">
+            <img
+            src="assets/images/Slack_icon_2019.svg.png"
+            alt="logo"
+            class="bottom__logo"
+            />
+          </div>
+          <div class="ninth__section__second__conteiner">
+            <div class="ninth__section__column">
+              <div class="column__title__conteiner one">
+                <h3 class="column__item title">Why slack?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sign one">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+              </div>
+              <div class="column__text__conteiner one">
+                <p class="column__item text" onclick="location.href='https://slack.com/why/slack-vs-email';">Slack vs. Email</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/features/channels';">Channels</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/engage-users';">Engagement</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/scale';">Scale</p>
+                <p class="column__item text" onclick="location.href='https://slackdemo.com/?vst=77b4f3792f967fdc38d8d67f956bab5a';">Watch the Demo</p>
+              </div>
+            </div>
+            <div class="ninth__section__column">
+              <div class="column__title__conteiner two">
+                <h3 class="column__item title">Product</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sign two">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+              </div>
+              <div class="column__text__conteiner two">
+                <p class="column__item text" onclick="location.href='https://slack.com/features';">Features</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/integrations';">Integrations</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/enterprise';">Enterprise</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/solutions';">Solutions</p>
+              </div>
+            </div>
+            <div class="ninth__section__column">
+              <div class="column__title__conteiner three">
+                <h3 class="column__item title">Pricing</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sign three">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+              </div>
+              <div class="column__text__conteiner three">
+                <p class="column__item text" onclick="location.href='https://slack.com/pricing';">Plans</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/pricing/paid-vs-free';">Paid vs. Free</p>
+              </div>
+            </div>
+            <div class="ninth__section__column">
+              <div class="column__title__conteiner four">
+                <h3 class="column__item title">Resources</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sign four">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+              </div>
+              <div class="column__text__conteiner four">
+                <p class="column__item text" onclick="location.href='https://slack.com/partners';">Partners</p>
+                <p class="column__item text" onclick="location.href='https://api.slack.com/';">Developers</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/community';">Community</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/apps';">Apps</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/blog';">Blog</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/help';">Help Center</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/events';">Events</p>
+              </div>
+            </div>
+            <div class="ninth__section__column last">
+              <div class="column__title__conteiner five">
+                <h3 class="column__item title">Company</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sign five">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+              </div>
+              <div class="column__text__conteiner five">
+                <p class="column__item text" onclick="location.href='https://slack.com/about';">About Us</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/about/leadership';">Leadership</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/blog/news';">News</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/media-kit';">Media Kit</p>
+                <p class="column__item text" onclick="location.href='https://slack.com/careers';">Careers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conteiner bottom__line__sec">
+        <div class="bottom__line__section conteiner padding">
+          <div class="bottom__line"></div>
+        </div>
+      </section>
+
+      <section class="section__conteiner tenth__sec">
+        <div class="tenth__section conteiner padding">
+          <div class="tenth__section__main__conteiner">
+            <div class="tenth__section__left__conteiner">
+              <p class="tenth__section__column__text" onclick="location.href='https://status.slack.com/';">Status</p>
+              <p class="tenth__section__column__text" onclick="location.href='https://slack.com/trust/privacy/privacy-policy';">Privacy</p>
+              <p class="tenth__section__column__text" onclick="location.href='https://slack.com/legal';">Terms</p>
+              <p class="tenth__section__column__text" onclick="location.href='https://slack.com/#';">Cookie Preferences</p>
+              <p class="tenth__section__column__text" onclick="location.href='https://slack.com/help/contact';">Contact Us</p>
+              <div class="tenth__section__column__text__conteiner">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="globe__sign">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>            
+                <p class="tenth__section__column__text__region">Change region</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="arrow__sign">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>            
+              </div>
+            </div>
+    
+    
+            <div class="tenth__section__right__conteiner">
+              <div class="tenth__section__column__text__conteiner" onclick="location.href='https://slack.com/downloads';" style="cursor:pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud__sign">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75v6.75m0 0l-3-3m3 3l3-3m-8.25 6a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                </svg>            
+                <p class="tenth__section__column__text" style="color: var(--clr-blue);">Download Slack</p>
+              </div>
+              <div class="tenth__section__icons">
+                <svg onclick="location.href='https://twitter.com/slackhq';" class="tenth__section__icon" width="20" height="20" version="1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M31.993 6.077c-1.177.523-2.44.876-3.77 1.033 1.355-.812 2.396-2.098 2.887-3.63-1.27.75-2.673 1.3-4.168 1.592C25.744 3.797 24.038 3 22.15 3c-3.626 0-6.563 2.938-6.563 6.563 0 .514.057 1.016.17 1.496C10.3 10.783 5.464 8.17 2.227 4.2c-.565.97-.89 2.098-.89 3.3 0 2.28 1.16 4.287 2.92 5.465-1.076-.035-2.088-.33-2.973-.82v.08c0 3.182 2.26 5.835 5.264 6.438-.55.15-1.13.23-1.73.23-.423 0-.833-.04-1.233-.117.834 2.606 3.26 4.504 6.13 4.558-2.245 1.76-5.075 2.81-8.15 2.81-.53 0-1.053-.03-1.566-.09C2.905 27.914 6.355 29 10.062 29c12.072 0 18.675-10 18.675-18.675 0-.284-.008-.568-.02-.85 1.283-.925 2.395-2.08 3.276-3.398z"></path></svg>
+                <svg onclick="location.href='https://facebook.com/slackhq';" class="tenth__section__icon" width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.115 0H.885A.883.883 0 0 0 0 .885v14.23c0 .49.395.885.885.885h7.659V9.803h-2.09v-2.4h2.09V5.62c0-2.069 1.27-3.189 3.104-3.189.875 0 1.643.053 1.867.096v2.155h-1.291c-1.003 0-1.184.469-1.184 1.173v1.547h2.379l-.31 2.4H11.04V16h4.075c.49 0 .885-.395.885-.885V.885A.883.883 0 0 0 15.115 0z" fill-rule="evenodd"></path></svg>
+                <svg onclick="location.href='https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw';" version="1" class="tenth__section__icon" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M31.67 9.18s-.312-2.354-1.27-3.39c-1.218-1.358-2.58-1.366-3.206-1.443C22.717 4 16.002 4 16.002 4h-.015s-6.715 0-11.19.347c-.626.077-1.988.085-3.206 1.443C.635 6.826.32 9.18.32 9.18S0 11.94 0 14.7v2.59c0 2.762.32 5.522.32 5.522s.312 2.352 1.27 3.386c1.22 1.358 2.816 1.317 3.528 1.46 2.56.26 10.877.342 10.877.342s6.722-.012 11.2-.355c.624-.08 1.987-.088 3.204-1.446.956-1.036 1.27-3.388 1.27-3.388s.32-2.76.32-5.523V14.7c0-2.76-.32-5.522-.32-5.522z"></path><path fill="#FFF" d="M12 10v12l10-6"></path></svg>
+                <svg onclick="location.href='https://www.linkedin.com/company/tiny-spec-inc/';" class="tenth__section__icon" width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.816 0C15.466 0 16 .512 16 1.152v13.696c0 .63-.533 1.152-1.184 1.152H1.184C.534 16 0 15.477 0 14.848V1.152C0 .512.533 0 1.184 0zM3.563 4.96a1.382 1.382 0 0 0 0-2.763c-.768 0-1.376.619-1.376 1.376 0 .768.608 1.387 1.376 1.387zm10.069 4.49c0-2.058-.437-3.637-2.848-3.637-1.152 0-1.92.63-2.24 1.227h-.032V5.995H6.24v7.637h2.368V9.856c0-.992.181-1.963 1.419-1.963 1.216 0 1.237 1.142 1.237 2.027v3.712h2.368zM2.368 13.633h2.379V5.995H2.368z" fill-rule="evenodd"></path></svg>
+              </div>
+            </div>
+          </div>
+          <p class="tenth__section__bottom__text">
+            ©2023 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by their respective owners.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
